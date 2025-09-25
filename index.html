@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Health Report - Hormone & Nutritional Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="report-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="health-icon">🏥</div>
+                <h1>Personal Health Report</h1>
+                <p class="subtitle">Hormone & Nutritional Analysis</p>
+                <div class="patient-info">
+                    <span class="patient-details">28-Year-Old Female</span>
+                    <span class="test-period">Test Period: April - August 2025</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Executive Summary -->
+        <section class="executive-summary">
+            <div class="card summary-card">
+                <div class="card__header">
+                    <h2>📊 Executive Summary</h2>
+                    <div class="overall-status status--success">Overall: Good Health</div>
+                </div>
+                <div class="card__body">
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <h3>🎯 Key Findings</h3>
+                            <ul>
+                                <li class="finding-excellent">Excellent reproductive hormone levels</li>
+                                <li class="finding-optimal">Optimal thyroid function</li>
+                                <li class="finding-critical">Critical iron deficiency requiring immediate attention</li>
+                                <li class="finding-borderline">B12 levels at lower end of normal range</li>
+                            </ul>
+                        </div>
+                        <div class="summary-item">
+                            <h3>⚡ Priority Actions</h3>
+                            <div class="priority-actions">
+                                <div class="action-urgent">Contact healthcare provider within 1 week</div>
+                                <div class="action-urgent">Start prescribed iron supplements</div>
+                                <div class="action-ongoing">Increase iron-rich foods in diet</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hormone Profile Section -->
+        <section class="hormone-section">
+            <div class="section-header">
+                <h2>🧬 Hormone Profile</h2>
+                <p>Comprehensive reproductive and thyroid hormone analysis</p>
+            </div>
+            
+            <div class="hormone-grid">
+                <!-- Progesterone Card -->
+                <div class="card hormone-card" data-status="excellent" data-hormone="progesterone">
+                    <div class="card__body">
+                        <div class="hormone-header">
+                            <h3>Progesterone</h3>
+                            <div class="status-badge status--success">Excellent</div>
+                        </div>
+                        <div class="hormone-value">
+                            <span class="value">48 nmol/L</span>
+                            <span class="reference">Reference: >21 nmol/L</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%; background: var(--color-success);"></div>
+                        </div>
+                        <p class="interpretation">Strong ovulation - excellent reproductive health</p>
+                        <button class="expand-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- FSH Card -->
+                <div class="card hormone-card" data-status="normal" data-hormone="fsh">
+                    <div class="card__body">
+                        <div class="hormone-header">
+                            <h3>FSH</h3>
+                            <div class="status-badge status--success">Normal</div>
+                        </div>
+                        <div class="hormone-value">
+                            <span class="value">6.6 IU/L</span>
+                            <span class="reference">Reference: 2-9 IU/L</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 73%; background: var(--color-success);"></div>
+                        </div>
+                        <p class="interpretation">Good ovarian reserve and function</p>
+                        <button class="expand-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- LH Card -->
+                <div class="card hormone-card" data-status="normal" data-hormone="lh">
+                    <div class="card__body">
+                        <div class="hormone-header">
+                            <h3>LH</h3>
+                            <div class="status-badge status--success">Normal</div>
+                        </div>
+                        <div class="hormone-value">
+                            <span class="value">5.8 IU/L</span>
+                            <span class="reference">Reference: 2-13 U/L</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%; background: var(--color-success);"></div>
+                        </div>
+                        <p class="interpretation">Healthy pituitary and reproductive function</p>
+                        <button class="expand-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Estradiol Card -->
+                <div class="card hormone-card" data-status="normal" data-hormone="estradiol">
+                    <div class="card__body">
+                        <div class="hormone-header">
+                            <h3>Estradiol</h3>
+                            <div class="status-badge status--success">Normal</div>
+                        </div>
+                        <div class="hormone-value">
+                            <span class="value">120 pmol/L</span>
+                            <span class="reference">Reference: 0-1461 pmol/L</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 8%; background: var(--color-success);"></div>
+                        </div>
+                        <p class="interpretation">Appropriate levels for menstrual cycle phase</p>
+                        <button class="expand-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- TSH Card -->
+                <div class="card hormone-card" data-status="optimal" data-hormone="tsh">
+                    <div class="card__body">
+                        <div class="hormone-header">
+                            <h3>TSH</h3>
+                            <div class="status-badge status--success">Optimal</div>
+                        </div>
+                        <div class="hormone-value">
+                            <span class="value">1.96 mIU/L</span>
+                            <span class="reference">Reference: 0.27-4.2 mIU/L</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 43%; background: var(--color-success);"></div>
+                        </div>
+                        <p class="interpretation">Excellent thyroid function</p>
+                        <button class="expand-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Prolactin Card -->
+                <div class="card hormone-card" data-status="normal" data-hormone="prolactin">
+                    <div class="card__body">
+                        <div class="hormone-header">
+                            <h3>Prolactin</h3>
+                            <div class="status-badge status--success">Normal</div>
+                        </div>
+                        <div class="hormone-value">
+                            <span class="value">181 mIU/L</span>
+                            <span class="reference">Reference: 74-399 mIU/L</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 33%; background: var(--color-success);"></div>
+                        </div>
+                        <p class="interpretation">Normal pituitary function</p>
+                        <button class="expand-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- SHBG Card -->
+                <div class="card hormone-card" data-status="normal" data-hormone="shbg">
+                    <div class="card__body">
+                        <div class="hormone-header">
+                            <h3>SHBG</h3>
+                            <div class="status-badge status--success">Normal</div>
+                        </div>
+                        <div class="hormone-value">
+                            <span class="value">55 nmol/L</span>
+                            <span class="reference">Reference: 32.4-128 nmol/L</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 24%; background: var(--color-success);"></div>
+                        </div>
+                        <p class="interpretation">Good protein binding capacity</p>
+                        <button class="expand-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Testosterone Card -->
+                <div class="card hormone-card" data-status="normal" data-hormone="testosterone">
+                    <div class="card__body">
+                        <div class="hormone-header">
+                            <h3>Testosterone</h3>
+                            <div class="status-badge status--success">Normal</div>
+                        </div>
+                        <div class="hormone-value">
+                            <span class="value">&lt;1.39 nmol/L</span>
+                            <span class="reference">Reference: 0-2.29 nmol/L</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 61%; background: var(--color-success);"></div>
+                        </div>
+                        <p class="interpretation">Appropriate levels for women</p>
+                        <button class="expand-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nutritional Status Section -->
+        <section class="nutrition-section">
+            <div class="section-header">
+                <h2>🍎 Nutritional Status (Haematinics)</h2>
+                <p>Essential vitamins and minerals for blood health</p>
+            </div>
+            
+            <div class="nutrition-grid">
+                <!-- Ferritin Card -->
+                <div class="card nutrition-card critical" data-nutrient="ferritin">
+                    <div class="card__body">
+                        <div class="nutrition-header">
+                            <h3>⚠️ Ferritin</h3>
+                            <div class="status-badge status--error">Critical</div>
+                        </div>
+                        <div class="nutrition-value">
+                            <span class="value critical-value">7 μg/L</span>
+                            <span class="reference">Reference: 15-98 μg/L</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill critical-fill" style="width: 7%; background: var(--color-error);"></div>
+                        </div>
+                        <p class="interpretation critical-text">Severe iron deficiency requiring immediate treatment</p>
+                        <div class="symptoms">
+                            <strong>Possible symptoms:</strong> Fatigue, shortness of breath, cold hands/feet, hair loss
+                        </div>
+                        <button class="expand-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- B12 Card -->
+                <div class="card nutrition-card borderline" data-nutrient="b12">
+                    <div class="card__body">
+                        <div class="nutrition-header">
+                            <h3>Vitamin B12</h3>
+                            <div class="status-badge status--warning">Borderline</div>
+                        </div>
+                        <div class="nutrition-value">
+                            <span class="value">118 ng/L</span>
+                            <span class="reference">Reference: 110-940 ng/L</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 1%; background: var(--color-warning);"></div>
+                        </div>
+                        <p class="interpretation">Low end of normal - may benefit from monitoring</p>
+                        <button class="expand-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Folate Card -->
+                <div class="card nutrition-card" data-nutrient="folate">
+                    <div class="card__body">
+                        <div class="nutrition-header">
+                            <h3>Folate</h3>
+                            <div class="status-badge status--success">Normal</div>
+                        </div>
+                        <div class="nutrition-value">
+                            <span class="value">6.7 μg/L</span>
+                            <span class="reference">Reference: 4-27 μg/L</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 12%; background: var(--color-success);"></div>
+                        </div>
+                        <p class="interpretation">Adequate folate levels</p>
+                        <button class="expand-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Items Section -->
+        <section class="actions-section">
+            <div class="section-header">
+                <h2>📋 Action Items & Next Steps</h2>
+                <p>Prioritized recommendations based on your results</p>
+            </div>
+            
+            <div class="actions-grid">
+                <div class="card action-card urgent">
+                    <div class="card__header">
+                        <h3>🚨 Immediate Actions</h3>
+                    </div>
+                    <div class="card__body">
+                        <ul class="action-list">
+                            <li>Contact healthcare provider within 1 week as requested for iron deficiency treatment</li>
+                            <li>Start iron supplements as prescribed by doctor</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card action-card ongoing">
+                    <div class="card__header">
+                        <h3>🔄 Ongoing Actions</h3>
+                    </div>
+                    <div class="card__body">
+                        <ul class="action-list">
+                            <li>Increase iron-rich foods in diet (red meat, leafy greens, legumes)</li>
+                            <li>Take vitamin C with iron-rich meals to improve absorption</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card action-card monitoring">
+                    <div class="card__header">
+                        <h3>📊 Monitoring</h3>
+                    </div>
+                    <div class="card__body">
+                        <ul class="action-list">
+                            <li>Follow up on B12 levels if any neurological symptoms develop</li>
+                            <li>Regular ferritin monitoring to track iron treatment response</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Glossary Section -->
+        <section class="glossary-section">
+            <div class="section-header">
+                <h2>📚 Medical Terms Glossary</h2>
+                <p>Click to expand definitions and explanations</p>
+            </div>
+            
+            <div class="glossary-container">
+                <button class="glossary-toggle btn btn--outline">Show/Hide Glossary</button>
+                <div class="glossary-content hidden" id="glossaryContent">
+                    <div class="glossary-grid">
+                        <div class="glossary-item">
+                            <h4>Progesterone</h4>
+                            <p>Hormone produced after ovulation that prepares the uterus for pregnancy. High levels indicate strong ovulation.</p>
+                        </div>
+                        <div class="glossary-item">
+                            <h4>FSH (Follicle Stimulating Hormone)</h4>
+                            <p>Hormone that stimulates egg development in the ovaries. Normal levels indicate good ovarian reserve.</p>
+                        </div>
+                        <div class="glossary-item">
+                            <h4>LH (Luteinizing Hormone)</h4>
+                            <p>Hormone that triggers ovulation and egg release. Essential for reproductive health.</p>
+                        </div>
+                        <div class="glossary-item">
+                            <h4>Estradiol</h4>
+                            <p>Main female sex hormone controlling the menstrual cycle and reproductive system.</p>
+                        </div>
+                        <div class="glossary-item">
+                            <h4>TSH (Thyroid Stimulating Hormone)</h4>
+                            <p>Hormone that regulates thyroid gland function and metabolism. Lower values often indicate better thyroid function.</p>
+                        </div>
+                        <div class="glossary-item">
+                            <h4>Ferritin</h4>
+                            <p>Protein that stores iron in the body. Low levels indicate iron deficiency, which can cause fatigue and other symptoms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Print Button -->
+    <div class="print-section">
+        <button class="btn btn--primary print-btn" onclick="window.print()">🖨️ Print Report</button>
+    </div>
+
+    <!-- Modal for detailed information -->
+    <div class="modal hidden" id="detailModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
